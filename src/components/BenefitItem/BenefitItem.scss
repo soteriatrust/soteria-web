@@ -1,0 +1,44 @@
+.benefit-item {
+  margin: 0 30px;
+    &__icon {
+      width: 120px;
+      display: flex;
+      position: relative;
+      margin: auto;
+      opacity: 0;
+      animation-name: sliceToTop;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      margin-bottom: 25px;
+    }
+  
+    &__header {
+      font-weight: 400;
+      font-family: 'Kanit';
+      font-size: 32px;
+      text-align: center;
+      position: relative;
+      opacity: 0;
+      animation-name: sliceToTop;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      animation-delay: 1.5s;
+      padding-bottom: 15px;
+    }
+  
+    &__description {
+      opacity: 0;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      animation-name: sliceToTop;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      animation-delay: 1.8s;
+    }
+  }
+
+  

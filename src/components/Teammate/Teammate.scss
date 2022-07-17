@@ -1,0 +1,23 @@
+.teammate-cpn{
+    font-size: 25px;
+    margin: 0 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    &__avt{
+        width:73px;
+        height: 73px;
+        margin-left: 45px;
+    }
+    &__name{
+        padding: 20px 0;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    &__role{
+        padding-bottom: 20px;
+    }
+    &__career{
+
+    }
+}

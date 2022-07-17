@@ -1,0 +1,236 @@
+@keyframes sliceToTop {
+  from {
+    bottom: -30px;
+    opacity: 0.2;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.landing-page {
+  &-mask {
+    background-image: url('./assets/Bg.jpg');
+    // background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;  
+    z-index: -1;  
+    filter: brightness(0.5);
+  }
+  color: white;
+  font-family: 'Kanit';
+  position: relative;
+  &-first-section {
+    // &::after {
+    //   content: "";
+    //   background-image: url('./assets/bg-full.jpg');
+    //   position: absolute;
+    //   width: 100vw;
+    //   height: 100%;
+    //   top: 0;
+    //   z-index: -1;
+    //   background-size: cover;
+    // }
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px;
+
+    &__logo {
+      height: 34px;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &__item {
+        cursor: pointer;
+        padding: 0 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+
+        &:last-child {
+          padding-right: 0px !important;
+        }
+      }
+    }
+  }
+
+  &-top-container {
+    padding: 74px 123px;
+    color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+
+    >div {
+      flex: 1;
+    }
+
+    &__left {
+      .header-text {
+        color: #fff;
+        font-size: 120px;
+
+        &__main {
+
+          font-weight: bold;
+          text-shadow:
+            0 0 7px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 6px white, 0 0 0px white, 0 0 0px white, 0 0 0px white, 0 0 14px white;
+        }
+
+        &__sub {
+          line-height: 50px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      justify-content: flex-end;
+
+      // .parallax-svg {
+      //   width: 400px;
+      //   overflow: hidden;
+      // }
+    }
+  }
+
+  &-text-section {
+    padding: 90px;
+    text-align: center;
+    color: #545567;
+    font-size: 22px;
+
+    &:nth-child(0) {
+      padding: 54px;
+    }
+
+    &__our-team {
+      padding: 90px 250px;
+      padding-bottom: 110px;
+    }
+
+    &__header {
+      color: #545567;
+      font-size: 30px;
+      font-weight: bold;
+      padding-bottom: 70px;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      padding: 0 200px;
+      line-height: 32px;
+    }
+  }
+
+  &-why-choose-us {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__header {
+      position: relative;
+      animation-name: sliceToTop;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+
+    &__description {
+      position: relative;
+      padding-bottom: 15px;
+      opacity: 0;
+      animation-name: sliceToTop;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+    }
+
+    &__contain {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .benefit-item {
+        margin: 0 10px;
+      }
+    }
+  }
+  &-contact {
+    color: white;
+    padding: 70px 150px;
+
+    &__header {
+      font-size: 25px;
+      padding-bottom: 75px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+
+      .button {
+        background-color: #C71222;
+        border-color: #C71222;
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 350px;
+    background-color: #EAEAEA;
+
+    &__logo {
+      padding-bottom: 40px;
+    }
+
+    &__description {
+      text-align: center;
+      color: #BD965B;
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 60px;
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 400px;
+
+      &-border {
+        border-radius: 100%;
+        border: 1px solid #BD9260;
+        width: 70px;
+        height: 70px;
+        padding: 6px;
+
+        .icon {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
+}
