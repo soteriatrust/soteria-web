@@ -20,6 +20,7 @@
     height: 100vh;  
     z-index: -1;  
     filter: brightness(0.5);
+    background-size: cover;
   }
   color: white;
   font-family: 'Kanit';
@@ -80,13 +81,13 @@
     &__left {
       .header-text {
         color: #fff;
-        font-size: 120px;
+        font-size: 116px;
 
         &__main {
 
           font-weight: bold;
           text-shadow:
-            0 0 7px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 6px white, 0 0 0px white, 0 0 0px white, 0 0 0px white, 0 0 14px white;
+          0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px white, 0 0 0px white, 0 0 0px white, 0 0 0px white, 0 0 11px white;
         }
 
         &__sub {

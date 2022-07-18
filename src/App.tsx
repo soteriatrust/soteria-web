@@ -27,6 +27,8 @@ import MemoTwitter from "./components/svgr/Twitter";
 import Teammate from "./components/Teammate";
 import WhyChooseUs from './assets/bg-why-choose-us.jpeg'
 import BgTop from './assets/bg-full.jpg'
+import earth from './assets/earth.jpg'
+import arrowDown from './assets/arrowDown.png'
 
 function App() {
   useEffect(() => {
@@ -69,14 +71,18 @@ function App() {
   }, []);
 
   const portfolioItems = [
-    { icon: Portfolio },
-    { icon: Portfolio },
-    { icon: Portfolio },
-    { icon: Portfolio },
-    { icon: Portfolio },
-    { icon: Portfolio },
-    { icon: Portfolio },
-    { icon: Portfolio },
+    { icon: require('./assets/portfolio/1.png') },
+    { icon: require('./assets/portfolio/2.png') },
+    { icon: require('./assets/portfolio/3.png') },
+    { icon: require('./assets/portfolio/4.png') },
+    { icon: require('./assets/portfolio/5.png') },
+    { icon: require('./assets/portfolio/6.png') },
+    { icon: require('./assets/portfolio/7.png') },
+    { icon: require('./assets/portfolio/8.png') },
+    { icon: require('./assets/portfolio/9.png') },
+    { icon: require('./assets/portfolio/10.png') },
+    { icon: require('./assets/portfolio/11.png') },
+    { icon: require('./assets/portfolio/12.png') },
   ];
 
   const SocialIcon = ({ children }: any) => (
@@ -89,6 +95,11 @@ function App() {
     <div className="landing-page" ref={homeRef} id="abc">
       <div className="landing-page-mask" />
       <div className="landing-page-first-section relative">
+        <img
+          src={earth}
+          className="absolute w-[145px] left-[40px] bottom-14"
+          style={{ zIndex: 0 }}
+        />
         <img src={BgTop} className="absolute w-screen h-full" style={{ zIndex: -1 }} />
         <div className="landing-page-header">
           <img src={LogoAndText} className="landing-page-header__logo" />
@@ -129,15 +140,15 @@ function App() {
               </defs>
               <g mask="url(#mask59370484-0ad9-4f0f-b4ad-a4f7dfab5688)">
                 <image
-                  style={{ transform: `translateY(${-scroll}px)` }}
-                  className="w-[300px] overflow-hidden sm:w-[200px]"
+                  style={{ transform: `translateY(${-scroll}px)`, width: "33vw" }}
+                  className="overflow-hidden"
                   xlinkHref={LogoMask}></image>
               </g>
             </svg>
           </div>
         </div>
         <div className="landing-page-trusted-validating">
-          <div className="px-[80px] 2xl:px-[123px] flex flex-row items-center">
+          <div className="px-[123px] 2xl:px-[123px] flex flex-row items-center">
             <div className="font-light text-[50px] text-white mr-5">Trusted Validating</div>
             <div className="flex flex-1 border border-white h-[1px]" />
             <div className="bg-gradient-to-r px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal">
@@ -162,6 +173,11 @@ function App() {
 
       {/* <div className="landing-page-first-section__mask" /> */}
       <div className="landing-page-why-choose-us">
+        <img
+          src={arrowDown}
+          className="absolute h-[140px] w-[18px]"
+          style={{ zIndex: 0, top: -70 }}
+        />
         <img src={WhyChooseUs} className="absolute w-screen h-full" style={{ zIndex: -1 }} />
         <div className="text-[50px] font-medium pt-[154px]">Why Choose Us</div>
         <span className="pt-[20px] font-light text-[20px]">
@@ -235,8 +251,8 @@ function App() {
       </div>
 
       <div className="landing-page-stake-now px-[80px] 2xl:px-[123px] relative" ref={stackNowRef}>
-        <img src={curveTop} className="absolute top-0 left-0 overflow-hidden" />
-        <div className="pt-[200px] font-medium text-[50px] pb-[34px] text-center">STAKE NOW</div>
+        <img src={curveTop} className="absolute top-0 left-0 overflow-hidden h-[170px] w-full" />
+        <div className="pt-[200px] font-medium text-[50px] pb-[70px] text-center">STAKE NOW</div>
         <div className="grid grid-cols-2  md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-5 pb-[171px]">
           <StackItem icon={emoney} name="E-money" percent="12.23" />
           <StackItem icon={emoney} name="E-money" percent="12.23" />
@@ -245,7 +261,10 @@ function App() {
           <StackItem icon={emoney} name="E-money" percent="12.23" />
           <StackItem icon={emoney} name="E-money" percent="12.23" />
         </div>
-        <img src={curveBottom} className="absolute bottom-0 left-0 overflow-hidden" />
+        <img
+          src={curveBottom}
+          className="absolute bottom-0 left-0 overflow-hidden h-[50px] w-full object-fill"
+        />
       </div>
       <div className="landing-page-portfolio bg-[#070C20] px-[80px] 2xl:px-[123px] pt-[21px] pb-[95px]">
         <div className="text-center font-medium text-[50px] pb-[50px]">Our Portfolio</div>
@@ -290,10 +309,10 @@ function App() {
         ref={contactRef}>
         <div className="font-medium text-[50px] text-center pb-[15px]">Get In Touch</div>
         <div className="max-w-[800px] m-auto ">
-        <div className="font-light text-[18px] text-center pb-[45px]">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt.
-        </div>
+          <div className="font-light text-[18px] text-center pb-[45px]">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt.
+          </div>
           <div className="grid grid-cols-2 gap-[20px] pb-[20px]">
             <Input placeholder="First Name" />
             <Input placeholder="Last Name" />
