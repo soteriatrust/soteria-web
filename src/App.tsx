@@ -97,7 +97,7 @@ function App() {
       <div className="landing-page-first-section relative">
         <img
           src={earth}
-          className="absolute w-[145px] left-[40px] bottom-14 hidden 2xl:visible"
+          className="absolute w-[145px] left-[40px] bottom-14 hidden xl:visible"
           style={{ zIndex: 0 }}
         />
         <img
@@ -108,7 +108,7 @@ function App() {
         <img src={BgTop} className="absolute w-screen h-full" style={{ zIndex: -1 }} />
         <div className="landing-page-header">
           <img src={LogoAndText} className="landing-page-header__logo" />
-          <div className="landing-page-header__right hidden 2xl:visible">
+          <div className="landing-page-header__right hidden xl:visible">
             <div className="landing-page-header__right__item" onClick={() => scrollTo(homeRef)}>
               Home
             </div>
@@ -126,15 +126,15 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="landing-page-top-container flex flex-col 2xl:flex-row 2xl:px-[123px] 2xl:py-[80] p-[10px]">
-          <div className="landing-page-top-container__left text-center pb-[108px] 2xl:pb-0 2xl:text-left">
+        <div className="landing-page-top-container flex flex-col xl:flex-row xl:px-[123px] xl:py-[80] p-[10px]">
+          <div className="landing-page-top-container__left text-center pb-[108px] xl:pb-0 xl:text-left">
             <div className="header-text">
               <div className="header-text__main">SOTERIA</div>
               <div className="header-text__sub">TRUST</div>
             </div>
           </div>
-          <div className="landing-page-top-container__right justify-center pt- 2xl:justify-end">
-            <svg viewBox="0 0 100 100" className="2xl:w-[400px] w-[300px]">
+          <div className="landing-page-top-container__right justify-center pt- xl:justify-end">
+            <svg viewBox="0 0 100 100" className="xl:w-[400px] w-[300px]">
               <defs>
                 <mask
                   id="mask59370484-0ad9-4f0f-b4ad-a4f7dfab5688"
@@ -153,18 +153,18 @@ function App() {
           </div>
         </div>
         <div className="landing-page-trusted-validating">
-          <div className="px-[50px] 2xl:px-[123px] flex flex-col  2xl:flex-row items-center">
-            <div className="font-light text-[50px] text-white 2xl:mr-5 pb-[50px] 2xl:pb-0">
+          <div className="px-[50px] xl:px-[123px] flex flex-col  xl:flex-row items-center">
+            <div className="font-light text-[50px] text-white xl:mr-5 pb-[50px] xl:pb-0">
               Trusted Validating
             </div>
-            <div className="flex-1 border border-white h-[1px] 2xl:visible invisible" />
+            <div className="flex-1 border border-white h-[1px] xl:visible invisible" />
             <div className="bg-gradient-to-r px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal">
               {" "}
               ✧ STAKE NOW ✧
             </div>
           </div>
           <div
-            className="2xl:px-[313px] px-[50px] flex justify-center flex-col items-center pb-[106px]"
+            className="xl:px-[313px] px-[50px] flex justify-center flex-col items-center pb-[106px]"
             ref={aboutUsRef}>
             <div className="pt-[100px] text-[50px] font-medium text-white">Soteria Trust</div>
             <div className="pt-5 text-[32px] font-extralight text-white">
@@ -195,7 +195,7 @@ function App() {
         <span className="pt-[20px] font-light text-[20px] text-center ">
           Here are some reasons why you will make the best decision to choosing us
         </span>
-        <div className="grid 2xl:px-[143px] px-[50px] 2xl:grid-cols-3 grid-cols-1">
+        <div className="grid xl:px-[143px] px-[50px] xl:grid-cols-3 grid-cols-1">
           <BenefitItem
             icon={security}
             header="Security & Trust"
@@ -233,8 +233,8 @@ function App() {
             }
           />
         </div>
-        <div className="2xl:px-[112px] px-[50px] pt-[120px]">
-          <div className="flex 2xl:flex-row flex-col-reverse">
+        <div className="xl:px-[112px] px-[50px] pt-[120px]">
+          <div className="flex xl:flex-row flex-col-reverse">
             <div className="flex flex-1 justify-center items-center">
               <img src={Validator} className="w-[500px] h-[500px]" />
             </div>
@@ -261,14 +261,14 @@ function App() {
         </div>
       </div>
 
-      <div className="landing-page-stake-now px-[50px] 2xl:px-[123px] relative" ref={stackNowRef}>
+      <div className="landing-page-stake-now px-[50px] xl:px-[123px] relative" ref={stackNowRef}>
         <img
           src={curveTop}
           style={{ top: -1 }}
           className="absolute left-0 overflow-hidden h-[170px] w-full"
         />
         <div className="pt-[200px] font-medium text-[50px] pb-[70px] text-center">STAKE NOW</div>
-        <div className="grid grid-cols-2  md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-5 pb-[171px]">
+        <div className="grid grid-cols-2  md:grid-cols-3 xl:grid-cols-4 xl:grid-cols-5  gap-5 pb-[171px]">
           <StackItem icon={emoney} name="E-money" percent="12.23" />
           <StackItem icon={emoney} name="E-money" percent="12.23" />
           <StackItem icon={emoney} name="E-money" percent="12.23" />
@@ -282,9 +282,9 @@ function App() {
           className="absolute left-0 overflow-hidden h-[50px] w-full object-fill"
         />
       </div>
-      <div className="landing-page-portfolio bg-[#070C20] px-[80px] 2xl:px-[123px] pt-[21px] pb-[95px]">
+      <div className="landing-page-portfolio bg-[#070C20] px-[80px] xl:px-[123px] pt-[21px] pb-[95px]">
         <div className="text-center font-medium text-[50px] pb-[50px]">Our Portfolio</div>
-        <div className="grid 2xl:grid-cols-6 grid-cols-2 gap-5">
+        <div className="grid xl:grid-cols-6 grid-cols-2 gap-5">
           {portfolioItems?.map((it: any) => (
             <PortfolioItem icon={it?.icon} />
           ))}
@@ -292,7 +292,7 @@ function App() {
         <div className="pt-[40px] text-center text-[22px] font-normal">And more...</div>
       </div>
       <div
-        className="px-[50px] 2xl:px-[123px] py-[70px] bg-[#070C20] border-t border-white"
+        className="px-[50px] xl:px-[123px] py-[70px] bg-[#070C20] border-t border-white"
         ref={teamRef}>
         <div className="font-medium text-[50px] pb-5">OUR TEAM</div>
         <div className="text-[20px] font-light pb-[60px]" style={{ width: "calc(100% - 130px)" }}>
@@ -320,14 +320,14 @@ function App() {
           />
         </Slider>
       </div>
-      <div className="landing-page-contact px-[50px] 2xl:px-[313px] z-10 relative" ref={contactRef}>
+      <div className="landing-page-contact px-[50px] xl:px-[313px] z-10 relative" ref={contactRef}>
         <div className="font-medium text-[50px] text-center pb-[15px]">Get In Touch</div>
         <div className="max-w-[800px] m-auto ">
           <div className="font-light text-[18px] text-center pb-[45px]">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
             invidunt.
           </div>
-          <div className="grid 2xl:grid-cols-2 grid-cols-1 gap-[20px] pb-[20px]">
+          <div className="grid xl:grid-cols-2 grid-cols-1 gap-[20px] pb-[20px]">
             <Input placeholder="First Name" />
             <Input placeholder="Last Name" />
             <Input placeholder="Email" />
@@ -342,11 +342,11 @@ function App() {
         </div>
       </div>
       <div
-        className="px-[50px] 2xl:px-[123px] py-[80px] bg-[#070C20] gap-[66px] 2xl:grid text-[#ffffffd9] flex flex-col justify-center items-center 2xl:items-start"
+        className="px-[50px] xl:px-[123px] py-[80px] bg-[#070C20] gap-[66px] xl:grid text-[#ffffffd9] flex flex-col justify-center items-center xl:items-start"
         style={{ gridTemplateColumns: "1fr 2fr 1fr" }}>
-        <div className="justify-between flex flex-col 2xl:items-start h-full">
+        <div className="justify-between flex flex-col xl:items-start h-full">
           <img className="h-[52px]" src={LogoAndText} />
-          <div className="text-[16px] font-light invisible 2xl:visible">
+          <div className="text-[16px] font-light invisible xl:visible">
             © 2019. All Rights. Reserved.
           </div>
         </div>
@@ -362,13 +362,13 @@ function App() {
           stake alongside us, accessing the chains’ rewards.
         </div>
         <div className="flex flex-col justify-between">
-          <div className="text-center pb-[40px] 2xl:pb-0 2xl:text-left">
+          <div className="text-center pb-[40px] xl:pb-0 xl:text-left">
             <div className="text-[18px] font-light text-[#ffffff73]">Contact Us</div>
             <div className="text-[22px] font-medium">hello@SOTERIAtrust.com</div>
           </div>
-          <div className="text-center 2xl:text-left">
+          <div className="text-center xl:text-left">
             <div className="text-[18px] font-light text-[#ffffff73] pb-[15px]">Follow Us</div>
-            <div className="flex flex-row justify-center 2xl:justify-start">
+            <div className="flex flex-row justify-center xl:justify-start">
               <SocialIcon>
                 <MemoTwitter />
               </SocialIcon>
@@ -383,7 +383,7 @@ function App() {
               </SocialIcon>
             </div>
           </div>
-          <div className="text-[16px] font-light 2xl:hidden text-center mt-[80px] mb-[20px] ">
+          <div className="text-[16px] font-light xl:hidden text-center mt-[80px] mb-[20px] ">
             © 2019. All Rights. Reserved.
           </div>
         </div>
