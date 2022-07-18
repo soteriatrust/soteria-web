@@ -17,7 +17,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 100vh;  
+    height: 100%;  
     z-index: -1;  
     filter: brightness(0.5);
     background-size: cover;
@@ -25,18 +25,6 @@
   color: white;
   font-family: 'Kanit';
   position: relative;
-  &-first-section {
-    // &::after {
-    //   content: "";
-    //   background-image: url('./assets/bg-full.jpg');
-    //   position: absolute;
-    //   width: 100vw;
-    //   height: 100%;
-    //   top: 0;
-    //   z-index: -1;
-    //   background-size: cover;
-    // }
-  }
 
   &-header {
     display: flex;
@@ -68,7 +56,6 @@
   }
 
   &-top-container {
-    padding: 74px 123px;
     color: white;
     z-index: 2;
     display: flex;
