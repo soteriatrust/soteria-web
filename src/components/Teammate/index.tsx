@@ -24,7 +24,7 @@ const Teammate = ({
   };
 
   return (
-    <div className="teammate-cpn grid grid-cols-2 h-[275px] p-[10px] bg-[white] gap-[30px] mr-[15px] rounded-tr-[140px] ">
+    <div className="teammate-cpn grid grid-cols-2 p-[10px] bg-[white] gap-[30px] mr-[15px] rounded-tr-[50px] xl:rounded-tr-[140px] ">
       <img className="rounded-md object-cover h-[255px]" src={avatar} />
      
       <div className="text-black flex flex-col justify-center">

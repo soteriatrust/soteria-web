@@ -2,7 +2,7 @@ import React from "react";
 import Input from "./Input/Input";
 const Contact = ({ ref }: any) => {
   return (
-    <div className="landing-page-contact px-[50px] xl:px-[313px] z-1 relative" ref={ref}>
+    <div className="landing-page-contact px-4 md:px-[50px] xl:px-[313px] z-1 relative" ref={ref}>
       <div className="font-medium text-[50px] text-center pb-[15px]">Get In Touch</div>
       <div className="max-w-[800px] m-auto ">
         <div className="font-light text-[18px] text-center pb-[45px]">

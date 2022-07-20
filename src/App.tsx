@@ -16,7 +16,7 @@ import earth from './assets/earth.jpg';
 import Logo from "./assets/logo-white.png";
 import LogoAndText from "./assets/logoNtext.svg";
 import LogoMask from "./assets/planet-with-light.png";
-import Validator from "./assets/validator.jpg";
+import Validator from "./assets/validator.png";
 import BenefitItem from "./components/BenefitItem";
 import Contact from "./components/Contact";
 import Footer, { SocialIcon } from "./components/Footer";
@@ -96,7 +96,7 @@ function App() {
         <img src={BgTop} id="bg-top" className="absolute w-screen h-full" style={{ zIndex: -1 }} />
         <div className={`landing-page-header z-10 ${showLeftMenu ? "fixed" : ""} xl:flex w-full`}>
           <div className="flex flex-row z-[101] justify-between items-center w-full">
-            <img src={LogoAndText} className="landing-page-header__logo h-[54px]" />
+            <img src={LogoAndText} className="landing-page-header__logo h-[40px] xl:h-[54px]" />
             <div className="landing-page-header__right hidden xl:flex">
               <div className="landing-page-header__right__item" onClick={() => scrollTo(homeRef)}>
                 Home
@@ -122,12 +122,12 @@ function App() {
             </div>
             {showLeftMenu ? (
               <MemoClose
-                className="block xl:hidden w-[45px] h-[45px] cursor-pointer"
+                className="block xl:hidden w-[40px] h-[40px] cursor-pointer"
                 onClick={() => setShowLeftMenu(!showLeftMenu)}
               />
             ) : (
               <MemoHamburger
-                className="block xl:hidden w-[45px] h-[45px] cursor-pointer"
+                className="block xl:hidden w-[40px] h-[40px] cursor-pointer"
                 onClick={() => setShowLeftMenu(!showLeftMenu)}
               />
             )}
@@ -141,30 +141,40 @@ function App() {
                 style={{ zIndex: 0, height: bgTopHeight }}
               />
               <div className="z-10 flex flex-col items-center top-[100px] relative top-menu">
-                <div className="text-center text-[42px] cursor-pointer" onClick={() => scrollTo(homeRef)}>
+                <div
+                  className="text-center text-[32px] cursor-pointer"
+                  onClick={() => scrollTo(homeRef)}>
                   Home
                 </div>
-                <div className="text-center text-[42px] cursor-pointer" onClick={() => scrollTo(aboutUsRef)}>
+                <div
+                  className="text-center text-[32px] cursor-pointer"
+                  onClick={() => scrollTo(aboutUsRef)}>
                   About Us
                 </div>
-                <div className="text-center text-[42px] cursor-pointer" onClick={() => scrollTo(stackNowRef)}>
+                <div
+                  className="text-center text-[32px] cursor-pointer"
+                  onClick={() => scrollTo(stackNowRef)}>
                   Stake now
                 </div>
-                <div className="text-center text-[42px] cursor-pointer" onClick={() => scrollTo(teamRef)}>
+                <div
+                  className="text-center text-[32px] cursor-pointer"
+                  onClick={() => scrollTo(teamRef)}>
                   Team
                 </div>
-                <div className="text-center text-[42px] cursor-pointer" onClick={() => scrollTo(contactRef)}>
+                <div
+                  className="text-center text-[32px] cursor-pointer"
+                  onClick={() => scrollTo(contactRef)}>
                   Contact Us
                 </div>
 
-                <div className="bg-gradient-to-r w-[200px] px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal mt-[80px]">
+                <div className="bg-gradient-to-r w-[200px] px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal xl:mt-[80px] mt-5">
                   {" "}
                   ✧ STAKE NOW ✧
                 </div>
-                <div className="h-[100px] bg-white w-[1px] my-[50px]" />
+                <div className="md:h-[100px] bg-white w-[1px] my-[10px] md:my-[50px]" />
 
                 <div className="flex flex-col justify-between h-full">
-                  <div className="text-center pb-[40px] xl:pb-0 xl:text-left">
+                  <div className="text-center xl:pb-[40px] pb-0 xl:text-left">
                     <div className="text-[18px] font-light text-[#ffffff73]">Contact Us</div>
                     <div className="text-[22px] font-medium">hello@SOTERIAtrust.com</div>
                   </div>
@@ -197,7 +207,7 @@ function App() {
         </div>
         <div className="landing-page-top-container flex flex-col xl:flex-row xl:px-[123px] xl:py-[80px] p-[10px]">
           <div className="landing-page-top-container__left text-center pb-[108px] xl:pb-0 xl:text-left">
-            <div className="header-text">
+            <div className="header-text text-[80px] xl:text-[100px]">
               <div className="font-semibold">SOTERIA</div>
               <div className="font-light leading-[60px]">TRUST</div>
             </div>
@@ -222,7 +232,7 @@ function App() {
           </div>
         </div>
         <div className="landing-page-trusted-validating">
-          <div className="px-[50px] xl:px-[123px] flex flex-col  xl:flex-row items-center">
+          <div className="px-4 md:px-[50px] xl:px-[123px] flex flex-col  xl:flex-row items-center">
             <div className="font-light text-[50px] text-white xl:mr-5 pb-[50px] xl:pb-0">
               Trusted Validating
             </div>
@@ -233,7 +243,7 @@ function App() {
             </div>
           </div>
           <div
-            className="xl:px-[313px] px-[50px] flex justify-center flex-col items-center pb-[106px]"
+            className="xl:px-[313px] px-4 md:px-[50px] flex justify-center flex-col items-center pb-[106px]"
             ref={aboutUsRef}>
             <div className="pt-[100px] text-[50px] font-medium text-white">Soteria Trust</div>
             <div className="pt-5 text-[32px] font-extralight text-white text-center">
@@ -247,11 +257,11 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="landing-page-why-choose-us px-[50px] overflow-hidden">
+      <div className="landing-page-why-choose-us px-4 md:px-[50px] overflow-hidden">
         <img
           src={require("./assets/top-parabol.png")}
-          className="absolute top-0 w-screen h-[100px]"
-          style={{ zIndex: -1 }}
+          className="absolute w-screen h-[100px]"
+          style={{ zIndex: -1, top: 0 }}
         />
         <img
           src={require("./assets/bottom-parabol.png")}
@@ -300,42 +310,45 @@ function App() {
             }
           />
         </div>
-        <div className="xl:px-[112px] px-[50px] pt-[120px]">
-          <div className="flex xl:flex-row flex-col-reverse">
-            <div className="flex flex-1 justify-center items-center">
-              <img src={Validator} className="w-[500px] h-[500px]" />
-            </div>
-            <div className="flex flex-1 flex-col">
-              <div className="text-[50px] font-medium pb-5 text-left ">What is Validator ?</div>
-              <div className="text-[20px] font-light">
-                Proof-Of-Stake blockchains rely on validators to secure the network.
-                <br />
-                <br />
-                The role of a validator is to run a full node server and participate in the
-                consensus protocol by broadcasting votes that contain cryptographic signatures
-                signed by each validator.
-                <br />
-                <br />
-                That way, validators commit new blocks in the blockchain and receive revenue in
-                exchange.
-                <br />
-                <br />
-                Validators also participate in the governance of decentralized networks by voting on
-                proposals or crafting their own proposal for the betterment of the network.
-              </div>
+      </div>
+
+      <div className="xl:px-[112px] px-4 md:px-[50px] pt-[60px] xl:pt-[120px] bg-[#070C20]">
+        <div className="flex xl:flex-row flex-col-reverse">
+          <div className="flex flex-1 justify-center items-center">
+            <img src={Validator} className=" w-full xl:w-[500px] xl:h-[500px]" />
+          </div>
+          <div className="flex flex-1 flex-col">
+            <div className="text-[50px] font-medium pb-5 text-left ">What is Validator ?</div>
+            <div className="text-[20px] font-light">
+              Proof-Of-Stake blockchains rely on validators to secure the network.
+              <br />
+              <br />
+              The role of a validator is to run a full node server and participate in the consensus
+              protocol by broadcasting votes that contain cryptographic signatures signed by each
+              validator.
+              <br />
+              <br />
+              That way, validators commit new blocks in the blockchain and receive revenue in
+              exchange.
+              <br />
+              <br />
+              Validators also participate in the governance of decentralized networks by voting on
+              proposals or crafting their own proposal for the betterment of the network.
             </div>
           </div>
         </div>
       </div>
 
-      <div className="landing-page-stake-now px-[50px] xl:px-[123px] relative" ref={stackNowRef}>
+      <div
+        className="landing-page-stake-now px-4 md:px-[50px] xl:px-[123px] relative"
+        ref={stackNowRef}>
         <img
           src={curveTop}
           style={{ top: -1 }}
           className="absolute left-0 overflow-hidden h-[170px] w-full"
         />
         <div className="pt-[200px] font-medium text-[50px] pb-[70px] text-center">STAKE NOW</div>
-        <div className="grid grid-cols-2  md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-5 pb-[171px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-5 pb-[171px]">
           <StakeItem icon={emoney} name="E-money" percent="12.23" />
           <StakeItem icon={emoney} name="E-money" percent="12.23" />
           <StakeItem icon={emoney} name="E-money" percent="12.23" />
@@ -349,7 +362,7 @@ function App() {
           className="absolute left-0 overflow-hidden h-[50px] w-full object-fill"
         />
       </div>
-      <div className="landing-page-portfolio bg-[#070C20] px-[80px] xl:px-[123px] pt-[21px] pb-[95px]">
+      <div className="landing-page-portfolio bg-[#070C20] px-4 md:px-[50px] xl:px-[123px] pt-[21px] pb-[95px]">
         <div className="text-center font-medium text-[50px] pb-[50px]">Our Portfolio</div>
         <div className="grid xl:grid-cols-6 grid-cols-2 gap-5">
           {portfolioItems?.map((it: any) => (
@@ -359,7 +372,7 @@ function App() {
         <div className="pt-[40px] text-center text-[22px] font-normal">And more...</div>
       </div>
       <div
-        className="px-[50px] xl:px-[123px] py-[70px] bg-[#070C20] border-t border-white"
+        className="px-[20px] xl:px-[123px] py-[70px] bg-[#070C20] border-t border-white"
         ref={teamRef}>
         <div className="font-medium text-[50px] pb-5">OUR TEAM</div>
         <div className="text-[20px] font-light pb-[60px]" style={{ width: "calc(100% - 130px)" }}>
