@@ -140,7 +140,7 @@ function App() {
                 className="absolute w-screen overflow-hidden "
                 style={{ zIndex: 0, height: bgTopHeight }}
               />
-              <div className="z-10 flex flex-col items-center top-[100px] relative">
+              <div className="z-10 flex flex-col items-center top-[100px] relative top-menu">
                 <div className="text-center text-[42px] cursor-pointer" onClick={() => scrollTo(homeRef)}>
                   Home
                 </div>

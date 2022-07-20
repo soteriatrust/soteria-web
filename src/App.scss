@@ -10,6 +10,16 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .landing-page {
   &-mask {
     background-image: url('./assets/Bg.jpg');
@@ -25,6 +35,13 @@
   color: white;
   font-family: 'Kanit';
   position: relative;
+
+  .top-menu{
+    animation-name: sliceToTop;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-duration: 0.5s;
+  }
 
   &-header {
     display: flex;
@@ -130,7 +147,6 @@
       animation-name: sliceToTop;
       animation-fill-mode: forwards;
       animation-duration: 1s;
-      animation-fill-mode: forwards;
       opacity: 0;
       font-size: 40px;
       padding-bottom: 20px;
