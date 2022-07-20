@@ -1,0 +1,17 @@
+.stake-item {
+    .menu{
+        box-shadow: 4px 4px 20px 1px #888888;
+        border-radius: 12px;
+        > div{
+            @apply flex flex-row items-center mb-[10px] font-light cursor-pointer;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .icon-more:hover {
+        .menu {
+            visibility: visible
+        }
+    }
+}

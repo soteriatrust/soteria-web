@@ -22,7 +22,7 @@ import Contact from "./components/Contact";
 import Footer, { SocialIcon } from "./components/Footer";
 import PortfolioItem from "./components/PortfolioItem";
 import Slider from "./components/Slider";
-import StackItem from "./components/StackItem";
+import StakeItem from "./components/StakeItem";
 import Teammate from "./components/Teammate";
 import MemoHamburger from "./components/svgr/Hamburger";
 import MemoTwitter from "./components/svgr/Twitter";
@@ -336,12 +336,12 @@ function App() {
         />
         <div className="pt-[200px] font-medium text-[50px] pb-[70px] text-center">STAKE NOW</div>
         <div className="grid grid-cols-2  md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-5 pb-[171px]">
-          <StackItem icon={emoney} name="E-money" percent="12.23" />
-          <StackItem icon={emoney} name="E-money" percent="12.23" />
-          <StackItem icon={emoney} name="E-money" percent="12.23" />
-          <StackItem icon={emoney} name="E-money" percent="12.23" />
-          <StackItem icon={emoney} name="E-money" percent="12.23" />
-          <StackItem icon={emoney} name="E-money" percent="12.23" />
+          <StakeItem icon={emoney} name="E-money" percent="12.23" />
+          <StakeItem icon={emoney} name="E-money" percent="12.23" />
+          <StakeItem icon={emoney} name="E-money" percent="12.23" />
+          <StakeItem icon={emoney} name="E-money" percent="12.23" />
+          <StakeItem icon={emoney} name="E-money" percent="12.23" />
+          <StakeItem icon={emoney} name="E-money" percent="12.23" />
         </div>
         <img
           src={curveBottom}
