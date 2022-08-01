@@ -44,12 +44,12 @@ const Slider = ({ children, settings }: any) => {
       <div className="flex justify-end absolute right-0" style={{ top: -120 }}>
         <div
           onClick={() => slider?.current?.slickPrev()}
-          className=" w-[50px] h-[50px] rounded-full flex justify-center items-center bg-gradient-to-b from-[#B1891D] to-[#EFC659] mr-4">
+          className=" w-[50px] h-[50px] rounded-full flex justify-center items-center bg-gradient-to-b from-[#B1891D] to-[#EFC659] cursor-pointer mr-4">
           <MemoArrowLeft className="text-white h-[50px]" />
         </div>
         <div
           onClick={() => slider?.current?.slickNext()}
-          className=" w-[50px] h-[50px] rounded-full flex justify-center items-center bg-gradient-to-b from-[#B1891D] to-[#EFC659] ">
+          className=" w-[50px] h-[50px] rounded-full flex justify-center items-center bg-gradient-to-b from-[#B1891D] to-[#EFC659] cursor-pointer ">
           <MemoArrowRight className="text-white" />
         </div>
       </div>

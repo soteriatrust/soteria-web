@@ -6,7 +6,7 @@ import MemoTwitter from "./svgr/Twitter";
 import LogoText from "../assets/logoNtext.svg";
 
 export const SocialIcon = ({ children }: any) => (
-    <div className=" w-[38px] h-[38px] rounded-full flex justify-center items-center bg-gradient-to-b from-[#B1891D] to-[#EFC659] mr-4">
+    <div className=" w-[38px] h-[38px] rounded-full flex justify-center items-center bg-gradient-to-b from-[#B1891D] to-[#EFC659] mr-4 cursor-pointer">
       {children}
     </div>
   );

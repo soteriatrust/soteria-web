@@ -20,6 +20,16 @@
   }
 }
 
+@keyframes showMask {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .landing-page {
   &-mask {
     background-image: url('./assets/Bg.jpg');
@@ -31,6 +41,10 @@
     z-index: -1;  
     filter: brightness(0.5);
     background-size: cover;
+    animation-name: showMask;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
   }
   color: white;
   font-family: 'Kanit';

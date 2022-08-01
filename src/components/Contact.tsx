@@ -17,7 +17,7 @@ const Contact = ({ ref }: any) => {
         </div>
         <Input placeholder="Message" textarea className="mb-[30px]" />
         <div className="mx-auto flex flex-row justify-center">
-          <div className="bg-gradient-to-r px-[60px] py-[10px] p-[1px] rounded-full from-[#B1891D] to-[#EFC659] text-[white]">
+          <div className="bg-gradient-to-r px-[60px] py-[10px] p-[1px] rounded-full from-[#B1891D] to-[#EFC659] text-[white] cursor-pointer">
             Submit
           </div>
         </div>

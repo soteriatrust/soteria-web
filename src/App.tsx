@@ -1,18 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.scss";
 import avt from "./assets/demo-team-avt.png";
-import emoney from "./assets/e-money.png";
+
 import security from "./assets/security.svg";
 import technology from "./assets/technology.svg";
 import uptime from "./assets/uptime.svg";
 // import ReactWOW from 'react-wow'
 //@ts-ignore
-import WOW from "wowjs";
-import arrowDown from './assets/arrowDown.png';
-import BgTop from './assets/bg-full.jpg';
-import curveBottom from "./assets/curve-bottom.png";
-import curveTop from "./assets/curve-top.png";
-import earth from './assets/earth.jpg';
+import arrowDown from "./assets/arrowDown.png";
+import BgTop from "./assets/bg-full.jpg";
+
+import earth from "./assets/earth.jpg";
 import Logo from "./assets/logo-white.png";
 import LogoAndText from "./assets/logoNtext.svg";
 import LogoMask from "./assets/planet-with-light.png";
@@ -22,29 +20,22 @@ import Contact from "./components/Contact";
 import Footer, { SocialIcon } from "./components/Footer";
 import PortfolioItem from "./components/PortfolioItem";
 import Slider from "./components/Slider";
-import StakeItem from "./components/StakeItem";
-import Teammate from "./components/Teammate";
-import MemoHamburger from "./components/svgr/Hamburger";
-import MemoTwitter from "./components/svgr/Twitter";
-import MemoTelegram from "./components/svgr/Telegram";
-import MemoLinkedin from "./components/svgr/Linkedin";
-import MemoFacebook from "./components/svgr/Facebook";
+import StakeNow from "./components/StakeNow";
 import MemoClose from "./components/svgr/Close";
+import MemoFacebook from "./components/svgr/Facebook";
+import MemoHamburger from "./components/svgr/Hamburger";
+import MemoLinkedin from "./components/svgr/Linkedin";
+import MemoTelegram from "./components/svgr/Telegram";
+import MemoTwitter from "./components/svgr/Twitter";
+import Teammate from "./components/Teammate";
 
 function App() {
-
   let homeRef: any = useRef(null);
-
   let aboutUsRef: any = useRef(null);
-
   let stackNowRef: any = useRef(null);
-
   let teamRef: any = useRef(null);
-
   let contactRef: any = useRef(null);
-
   const [scroll, setScroll] = useState(0);
-
   const [showLeftMenu, setShowLeftMenu] = useState(false);
   const onScroll = (e: any) => {
     setScroll(window.pageYOffset);
@@ -62,22 +53,21 @@ function App() {
   }, []);
 
   const portfolioItems = [
-    { icon: require('./assets/portfolio/1.png') },
-    { icon: require('./assets/portfolio/2.png') },
-    { icon: require('./assets/portfolio/3.png') },
-    { icon: require('./assets/portfolio/4.png') },
-    { icon: require('./assets/portfolio/5.png') },
-    { icon: require('./assets/portfolio/6.png') },
-    { icon: require('./assets/portfolio/7.png') },
-    { icon: require('./assets/portfolio/8.png') },
-    { icon: require('./assets/portfolio/9.png') },
-    { icon: require('./assets/portfolio/10.png') },
-    { icon: require('./assets/portfolio/11.png') },
-    { icon: require('./assets/portfolio/12.png') },
+    { icon: require("./assets/portfolio/1.png") },
+    { icon: require("./assets/portfolio/2.png") },
+    { icon: require("./assets/portfolio/3.png") },
+    { icon: require("./assets/portfolio/4.png") },
+    { icon: require("./assets/portfolio/5.png") },
+    { icon: require("./assets/portfolio/6.png") },
+    { icon: require("./assets/portfolio/7.png") },
+    { icon: require("./assets/portfolio/8.png") },
+    { icon: require("./assets/portfolio/9.png") },
+    { icon: require("./assets/portfolio/10.png") },
+    { icon: require("./assets/portfolio/11.png") },
+    { icon: require("./assets/portfolio/12.png") },
   ];
 
   const bgTopHeight = document.getElementById("bg-top")?.clientHeight;
-
 
   return (
     <div className="landing-page" ref={homeRef} id="abc">
@@ -167,7 +157,7 @@ function App() {
                   Contact Us
                 </div>
 
-                <div className="bg-gradient-to-r w-[200px] px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal xl:mt-[80px] mt-5">
+                <div className="bg-gradient-to-r w-[200px] px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal xl:mt-[80px] mt-5 cursor-pointer" onClick={()=>scrollTo(stackNowRef)}>
                   {" "}
                   ✧ STAKE NOW ✧
                 </div>
@@ -233,11 +223,13 @@ function App() {
         </div>
         <div className="landing-page-trusted-validating">
           <div className="px-4 md:px-[50px] xl:px-[123px] flex flex-col  xl:flex-row items-center">
-            <div className="font-light text-[50px] text-white xl:mr-5 pb-[50px] xl:pb-0">
+            <div className="font-light text-[50px] text-white xl:mr-5 pb-[50px] text-center xl:pb-0">
               Trusted Validating
             </div>
             <div className="flex-1 bg-white h-[1px] xl:visible invisible" />
-            <div className="bg-gradient-to-r px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal">
+            <div
+              className="bg-gradient-to-r px-[26px] py-[13px] ml-3 rounded-full from-[#B1891D] to-[#EFC659] text-[white] text-[20px] text-normal cursor-pointer"
+              onClick={() => scrollTo(stackNowRef)}>
               {" "}
               ✧ STAKE NOW ✧
             </div>
@@ -339,40 +331,19 @@ function App() {
         </div>
       </div>
 
-      <div
-        className="landing-page-stake-now px-4 md:px-[50px] xl:px-[123px] relative"
-        ref={stackNowRef}>
-        <img
-          src={curveTop}
-          style={{ top: -1 }}
-          className="absolute left-0 overflow-hidden h-[170px] w-full"
-        />
-        <div className="pt-[200px] font-medium text-[50px] pb-[70px] text-center">STAKE NOW</div>
-        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-5 pb-[171px]">
-          <StakeItem icon={emoney} name="E-money" percent="12.23" />
-          <StakeItem icon={emoney} name="E-money" percent="12.23" />
-          <StakeItem icon={emoney} name="E-money" percent="12.23" />
-          <StakeItem icon={emoney} name="E-money" percent="12.23" />
-          <StakeItem icon={emoney} name="E-money" percent="12.23" />
-          <StakeItem icon={emoney} name="E-money" percent="12.23" />
-        </div>
-        <img
-          src={curveBottom}
-          style={{ bottom: -1 }}
-          className="absolute left-0 overflow-hidden h-[50px] w-full object-fill"
-        />
-      </div>
+      <StakeNow ref={stackNowRef} />
+
       <div className="landing-page-portfolio bg-[#070C20] px-4 md:px-[50px] xl:px-[123px] pt-[21px] pb-[95px]">
         <div className="text-center font-medium text-[50px] pb-[50px]">Our Portfolio</div>
         <div className="grid xl:grid-cols-6 grid-cols-2 gap-5">
-          {portfolioItems?.map((it: any) => (
-            <PortfolioItem icon={it?.icon} />
+          {portfolioItems?.map((it: any, index: number) => (
+            <PortfolioItem key={index} icon={it?.icon} />
           ))}
         </div>
         <div className="pt-[40px] text-center text-[22px] font-normal">And more...</div>
       </div>
       <div
-        className="px-[20px] xl:px-[123px] py-[70px] bg-[#070C20] border-t border-white"
+        className="px-[20px] xl:px-[123px] py-[70px] bg-[#070C20] border-t-[1px] border-[#2A2E40]"
         ref={teamRef}>
         <div className="font-medium text-[50px] pb-5">OUR TEAM</div>
         <div className="text-[20px] font-light pb-[60px]" style={{ width: "calc(100% - 130px)" }}>
