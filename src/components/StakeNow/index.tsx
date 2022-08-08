@@ -13,7 +13,7 @@ const StakeNow = forwardRef((_, ref: any) => {
   }, []);
 
   const getStake = async () => {
-    const data = await axios.get("http://stake.soteriatrust.co/common");
+    const data = await axios.get("https://stake.soteriatrust.co/common");
     setStakeItems(data?.data?.networks);
   };
 
